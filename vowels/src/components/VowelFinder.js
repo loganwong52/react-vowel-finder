@@ -33,8 +33,9 @@ function VowelFinder(props) {
 
     return (
         <div>
-            <p>
-                You entered this word: {renderHighlightVowels()}
+            You entered this word:
+            <p id="analyzedWord">
+                {renderHighlightVowels()}
             </p>
         </div>
     )

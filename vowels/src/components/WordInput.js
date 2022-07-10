@@ -8,6 +8,15 @@ function WordInput(props) { // notice that we take in a parameter for our functi
 
     // event handler
     const clickedHandler = () => {
+        // let paragraph = document.getElementById('#analyzedWord')
+        let analyzedWord = document.querySelector('#analyzedWord')
+        if (analyzedWord) {
+            console.log(analyzedWord)
+            let newHistory = [...props.wordHistory, analyzedWord]
+            props.updateHistory(newHistory)
+        }
+
+
         let inputElement = document.getElementById(inputIdStr)
         if (inputElement) {
             // if not null...
