@@ -7,7 +7,6 @@ import './App.css';
 import MyHeader from './components/MyHeader';
 import WordInput from './components/WordInput';
 import VowelFinder from './components/VowelFinder';
-// import WordHistory from './components/WordHistory';
 
 function App() {
   // states
@@ -29,7 +28,6 @@ function App() {
       <hr />
       <WordInput functionToCallWhenButtonIsClicked={onSubmitWord} wordHistory={wordHistory} updateHistory={updateHistory} />
       <VowelFinder word={word} wordHistory={wordHistory} />
-      {/* <WordHistory wordHistory={wordHistory} /> */}
     </div>
   )
 }
